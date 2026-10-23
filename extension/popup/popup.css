@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light dark;
+  --ok: #2e9e5b;
+  --bad: #d0453b;
+  --warn: #d69a1e;
+  --unknown: #8a8a8e;
+  --muted: #6e6e73;
+  --rule: rgba(128, 128, 128, 0.25);
+  --hint: var(--muted);
+  font: 13px -apple-system, system-ui, sans-serif;
+}
+
+/* Safari draws the popup on a dark, translucent material in dark mode, so the
+   secondary text has to lighten with it (these match Apple's secondary label). */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --muted: #aeaeb2;
+    --unknown: #98989d;
+    --rule: rgba(255, 255, 255, 0.16);
+    /* The explanation has to stay readable over whatever page shows through the
+       translucent popup, so it sits near the primary text colour. */
+    --hint: #e5e5ea;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 14px 16px 12px;
+  min-width: 260px;
+  max-width: 360px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.lede {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+code {
+  font: 12px ui-monospace, Menlo, monospace;
+}
+
+.status {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.status li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.status .label {
+  flex: 1;
+}
+
+.status .value {
+  color: var(--muted);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--unknown);
+  flex: none;
+}
+
+li.ok .dot { background: var(--ok); }
+li.bad .dot { background: var(--bad); }
+li.warn .dot { background: var(--warn); }
+
+.hint {
+  margin: 10px 0 0;
+  color: var(--hint);
+}

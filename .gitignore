@@ -1,0 +1,21 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+.build/
+
+# App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Output of tools/check-server.py when run without an output directory
+log.jsonl

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- GPC Switch icon: a shield with a toggle switched on. Full-bleed artwork;
+       tools/make-icons.swift applies the platform-specific framing. -->
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2268C2"/>
+      <stop offset="1" stop-color="#123E7A"/>
+    </linearGradient>
+    <filter id="knob-shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#background)"/>
+  <!-- Shield; the wide round-joined stroke softens its corners. -->
+  <path d="M512 118 C628 160 736 192 832 204 V500 C832 706 700 846 512 922 C324 846 192 706 192 500 V204 C288 192 396 160 512 118 Z"
+        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="70" stroke-linejoin="round"
+        transform="translate(512 522) scale(0.95) translate(-512 -522)"/>
+  <!-- Toggle, on. -->
+  <rect x="292" y="448" width="440" height="216" rx="108" fill="#34C759"/>
+  <circle cx="624" cy="556" r="88" fill="#FFFFFF" filter="url(#knob-shadow)"/>
+</svg>
