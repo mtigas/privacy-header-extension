@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "GPC Switch",
+  "version": "2026.0.1",
+  "description": "Sends the Global Privacy Control (Sec-GPC: 1) and Do Not Track (DNT: 1) privacy signals to websites you visit.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png",
+    "256": "icons/icon-256.png",
+    "512": "icons/icon-512.png"
+  },
+  "permissions": [
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "privacy_signal_headers",
+        "enabled": true,
+        "path": "rules/privacy-signal-headers.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "signal.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "match_about_blank": true,
+      "match_origin_as_fallback": true,
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "popup/exceptions.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "action": {
+    "default_title": "GPC Switch",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "browser_specific_settings": {
+    "safari": {
+      "strict_min_version": "18.0"
+    }
+  }
+}

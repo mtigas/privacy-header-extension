@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69A64CE03089480A0086E815 /* GPC Switch Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 69A64CDF3089480A0086E815 /* GPC Switch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69A64CEA3089480A0086E815 /* GPC Switch Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 69A64CE93089480A0086E815 /* GPC Switch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69A64CF93089480A0086E815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A64CBA3089480A0086E815 /* Assets.xcassets */; };
+		69A64CFA3089480A0086E815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A64CBA3089480A0086E815 /* Assets.xcassets */; };
+		69A64CFB3089480A0086E815 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64CBC3089480A0086E815 /* SafariWebExtensionHandler.swift */; };
+		69A64CFC3089480A0086E815 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64CBC3089480A0086E815 /* SafariWebExtensionHandler.swift */; };
+		69A64D133089480A0086E815 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D0E3089480A0086E815 /* popup */; };
+		69A64D143089480A0086E815 /* signal.js in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D0F3089480A0086E815 /* signal.js */; };
+		69A64D373089480A0086E815 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D363089480A0086E815 /* background.js */; };
+		69A64D383089480A0086E815 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D363089480A0086E815 /* background.js */; };
+		69A64D153089480A0086E815 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D103089480A0086E815 /* icons */; };
+		69A64D163089480A0086E815 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D113089480A0086E815 /* manifest.json */; };
+		69A64D173089480A0086E815 /* rules in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D123089480A0086E815 /* rules */; };
+		69A64D183089480A0086E815 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D0E3089480A0086E815 /* popup */; };
+		69A64D193089480A0086E815 /* signal.js in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D0F3089480A0086E815 /* signal.js */; };
+		69A64D1A3089480A0086E815 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D103089480A0086E815 /* icons */; };
+		69A64D1B3089480A0086E815 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D113089480A0086E815 /* manifest.json */; };
+		69A64D1C3089480A0086E815 /* rules in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D123089480A0086E815 /* rules */; };
+		69A64D213089480A0086E815 /* GPCSwitchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D203089480A0086E815 /* GPCSwitchApp.swift */; };
+		69A64D223089480A0086E815 /* GPCSwitchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D203089480A0086E815 /* GPCSwitchApp.swift */; };
+		69A64D243089480A0086E815 /* ExtensionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D233089480A0086E815 /* ExtensionStatus.swift */; };
+		69A64D343089480A0086E815 /* SiteExceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D333089480A0086E815 /* SiteExceptions.swift */; };
+		69A64D353089480A0086E815 /* SiteExceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D333089480A0086E815 /* SiteExceptions.swift */; };
+		69A64D253089480A0086E815 /* ExtensionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D233089480A0086E815 /* ExtensionStatus.swift */; };
+		69A64D2A3089480A0086E815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D293089480A0086E815 /* ContentView.swift */; };
+		69A64D2B3089480A0086E815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D293089480A0086E815 /* ContentView.swift */; };
+		69A64D2D3089480A0086E815 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D2C3089480A0086E815 /* TipJarView.swift */; };
+		69A64D2E3089480A0086E815 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A64D2C3089480A0086E815 /* TipJarView.swift */; };
+		69A64D303089480A0086E815 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D2F3089480A0086E815 /* PrivacyInfo.xcprivacy */; };
+		69A64D313089480A0086E815 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 69A64D2F3089480A0086E815 /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A64CE13089480A0086E815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A64CAE308948090086E815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A64CDE3089480A0086E815;
+			remoteInfo = "GPC Switch Extension (iOS)";
+		};
+		69A64CEB3089480A0086E815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A64CAE308948090086E815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A64CE83089480A0086E815;
+			remoteInfo = "GPC Switch Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69A64D023089480A0086E815 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				69A64CE03089480A0086E815 /* GPC Switch Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		69A64D093089480A0086E815 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				69A64CEA3089480A0086E815 /* GPC Switch Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69A64CBA3089480A0086E815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A64CBC3089480A0086E815 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		69A64CC13089480A0086E815 /* GPC Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPC Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A64CCE3089480A0086E815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A64CD33089480A0086E815 /* GPC Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPC Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A64CDA3089480A0086E815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A64CDF3089480A0086E815 /* GPC Switch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GPC Switch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A64CE43089480A0086E815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A64CE93089480A0086E815 /* GPC Switch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GPC Switch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A64CEE3089480A0086E815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A64D0E3089480A0086E815 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = ../../../extension/popup; sourceTree = "<group>"; };
+		69A64D0F3089480A0086E815 /* signal.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = signal.js; path = ../../../extension/signal.js; sourceTree = "<group>"; };
+		69A64D363089480A0086E815 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		69A64D103089480A0086E815 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
+		69A64D113089480A0086E815 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		69A64D123089480A0086E815 /* rules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rules; path = ../../../extension/rules; sourceTree = "<group>"; };
+		69A64D203089480A0086E815 /* GPCSwitchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCSwitchApp.swift; sourceTree = "<group>"; };
+		69A64D233089480A0086E815 /* ExtensionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStatus.swift; sourceTree = "<group>"; };
+		69A64D333089480A0086E815 /* SiteExceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteExceptions.swift; sourceTree = "<group>"; };
+		69A64D293089480A0086E815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69A64D2C3089480A0086E815 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
+		69A64D2F3089480A0086E815 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		69A64D323089480A0086E815 /* GPC Switch.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GPC Switch.storekit"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A64CBE3089480A0086E815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		69A64CD03089480A0086E815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		69A64CDC3089480A0086E815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		69A64CE63089480A0086E815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69A64CAD308948090086E815 = {
+			isa = PBXGroup;
+			children = (
+				69A64CB23089480A0086E815 /* Shared (App) */,
+				69A64CBB3089480A0086E815 /* Shared (Extension) */,
+				69A64CC33089480A0086E815 /* iOS (App) */,
+				69A64CD43089480A0086E815 /* macOS (App) */,
+				69A64CE33089480A0086E815 /* iOS (Extension) */,
+				69A64CED3089480A0086E815 /* macOS (Extension) */,
+				69A64D323089480A0086E815 /* GPC Switch.storekit */,
+				69A64CC23089480A0086E815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69A64CB23089480A0086E815 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64D203089480A0086E815 /* GPCSwitchApp.swift */,
+				69A64D233089480A0086E815 /* ExtensionStatus.swift */,
+				69A64D333089480A0086E815 /* SiteExceptions.swift */,
+				69A64D293089480A0086E815 /* ContentView.swift */,
+				69A64D2C3089480A0086E815 /* TipJarView.swift */,
+				69A64CBA3089480A0086E815 /* Assets.xcassets */,
+				69A64D2F3089480A0086E815 /* PrivacyInfo.xcprivacy */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		69A64CBB3089480A0086E815 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64D0D3089480A0086E815 /* Resources */,
+				69A64CBC3089480A0086E815 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		69A64CC23089480A0086E815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A64CC13089480A0086E815 /* GPC Switch.app */,
+				69A64CD33089480A0086E815 /* GPC Switch.app */,
+				69A64CDF3089480A0086E815 /* GPC Switch Extension.appex */,
+				69A64CE93089480A0086E815 /* GPC Switch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A64CC33089480A0086E815 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64CCE3089480A0086E815 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		69A64CD43089480A0086E815 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64CDA3089480A0086E815 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		69A64CE33089480A0086E815 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64CE43089480A0086E815 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		69A64CED3089480A0086E815 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				69A64CEE3089480A0086E815 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		69A64D0D3089480A0086E815 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69A64D0E3089480A0086E815 /* popup */,
+				69A64D0F3089480A0086E815 /* signal.js */,
+				69A64D363089480A0086E815 /* background.js */,
+				69A64D103089480A0086E815 /* icons */,
+				69A64D113089480A0086E815 /* manifest.json */,
+				69A64D123089480A0086E815 /* rules */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A64CC03089480A0086E815 /* GPC Switch (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A64D033089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch (iOS)" */;
+			buildPhases = (
+				69A64CBD3089480A0086E815 /* Sources */,
+				69A64CBE3089480A0086E815 /* Frameworks */,
+				69A64CBF3089480A0086E815 /* Resources */,
+				69A64D023089480A0086E815 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A64CE23089480A0086E815 /* PBXTargetDependency */,
+			);
+			name = "GPC Switch (iOS)";
+			productName = "GPC Switch (iOS)";
+			productReference = 69A64CC13089480A0086E815 /* GPC Switch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A64CD23089480A0086E815 /* GPC Switch (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A64D0A3089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch (macOS)" */;
+			buildPhases = (
+				69A64CCF3089480A0086E815 /* Sources */,
+				69A64CD03089480A0086E815 /* Frameworks */,
+				69A64CD13089480A0086E815 /* Resources */,
+				69A64D093089480A0086E815 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A64CEC3089480A0086E815 /* PBXTargetDependency */,
+			);
+			name = "GPC Switch (macOS)";
+			productName = "GPC Switch (macOS)";
+			productReference = 69A64CD33089480A0086E815 /* GPC Switch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A64CDE3089480A0086E815 /* GPC Switch Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A64CFF3089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch Extension (iOS)" */;
+			buildPhases = (
+				69A64CDB3089480A0086E815 /* Sources */,
+				69A64CDC3089480A0086E815 /* Frameworks */,
+				69A64CDD3089480A0086E815 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "GPC Switch Extension (iOS)";
+			productName = "GPC Switch Extension (iOS)";
+			productReference = 69A64CDF3089480A0086E815 /* GPC Switch Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		69A64CE83089480A0086E815 /* GPC Switch Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A64D063089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch Extension (macOS)" */;
+			buildPhases = (
+				69A64CE53089480A0086E815 /* Sources */,
+				69A64CE63089480A0086E815 /* Frameworks */,
+				69A64CE73089480A0086E815 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "GPC Switch Extension (macOS)";
+			productName = "GPC Switch Extension (macOS)";
+			productReference = 69A64CE93089480A0086E815 /* GPC Switch Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A64CAE308948090086E815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					69A64CC03089480A0086E815 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					69A64CD23089480A0086E815 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					69A64CDE3089480A0086E815 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					69A64CE83089480A0086E815 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 69A64CB1308948090086E815 /* Build configuration list for PBXProject "GPC Switch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A64CAD308948090086E815;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 69A64CC23089480A0086E815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A64CC03089480A0086E815 /* GPC Switch (iOS) */,
+				69A64CD23089480A0086E815 /* GPC Switch (macOS) */,
+				69A64CDE3089480A0086E815 /* GPC Switch Extension (iOS) */,
+				69A64CE83089480A0086E815 /* GPC Switch Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A64CBF3089480A0086E815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				69A64CF93089480A0086E815 /* Assets.xcassets in Resources */,
+				69A64D303089480A0086E815 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+		};
+		69A64CD13089480A0086E815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				69A64CFA3089480A0086E815 /* Assets.xcassets in Resources */,
+				69A64D313089480A0086E815 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+		};
+		69A64CDD3089480A0086E815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				69A64D1B3089480A0086E815 /* manifest.json in Resources */,
+				69A64D1A3089480A0086E815 /* icons in Resources */,
+				69A64D1C3089480A0086E815 /* rules in Resources */,
+				69A64D193089480A0086E815 /* signal.js in Resources */,
+				69A64D383089480A0086E815 /* background.js in Resources */,
+				69A64D183089480A0086E815 /* popup in Resources */,
+			);
+		};
+		69A64CE73089480A0086E815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				69A64D163089480A0086E815 /* manifest.json in Resources */,
+				69A64D153089480A0086E815 /* icons in Resources */,
+				69A64D173089480A0086E815 /* rules in Resources */,
+				69A64D143089480A0086E815 /* signal.js in Resources */,
+				69A64D373089480A0086E815 /* background.js in Resources */,
+				69A64D133089480A0086E815 /* popup in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A64CBD3089480A0086E815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				69A64D213089480A0086E815 /* GPCSwitchApp.swift in Sources */,
+				69A64D243089480A0086E815 /* ExtensionStatus.swift in Sources */,
+				69A64D343089480A0086E815 /* SiteExceptions.swift in Sources */,
+				69A64D2A3089480A0086E815 /* ContentView.swift in Sources */,
+				69A64D2D3089480A0086E815 /* TipJarView.swift in Sources */,
+			);
+		};
+		69A64CCF3089480A0086E815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				69A64D223089480A0086E815 /* GPCSwitchApp.swift in Sources */,
+				69A64D253089480A0086E815 /* ExtensionStatus.swift in Sources */,
+				69A64D353089480A0086E815 /* SiteExceptions.swift in Sources */,
+				69A64D2B3089480A0086E815 /* ContentView.swift in Sources */,
+				69A64D2E3089480A0086E815 /* TipJarView.swift in Sources */,
+			);
+		};
+		69A64CDB3089480A0086E815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				69A64CFB3089480A0086E815 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+		69A64CE53089480A0086E815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				69A64CFC3089480A0086E815 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A64CE23089480A0086E815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A64CDE3089480A0086E815 /* GPC Switch Extension (iOS) */;
+			targetProxy = 69A64CE13089480A0086E815 /* PBXContainerItemProxy */;
+		};
+		69A64CEC3089480A0086E815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A64CE83089480A0086E815 /* GPC Switch Extension (macOS) */;
+			targetProxy = 69A64CEB3089480A0086E815 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		69A64CFD3089480A0086E815 /* Debug configuration for PBXProject "GPC Switch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68QUP6KP2C;
+				MARKETING_VERSION = 2026.0.1;
+				SWIFT_VERSION = 6.0;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69A64CFE3089480A0086E815 /* Release configuration for PBXProject "GPC Switch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68QUP6KP2C;
+				MARKETING_VERSION = 2026.0.1;
+				SWIFT_VERSION = 6.0;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		69A64D003089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch.Extension;
+				PRODUCT_NAME = "GPC Switch Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A64D013089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch.Extension;
+				PRODUCT_NAME = "GPC Switch Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A64D043089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch;
+				PRODUCT_NAME = "GPC Switch";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A64D053089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch;
+				PRODUCT_NAME = "GPC Switch";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A64D073089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch.Extension;
+				PRODUCT_NAME = "GPC Switch Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Debug;
+		};
+		69A64D083089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch.Extension;
+				PRODUCT_NAME = "GPC Switch Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Release;
+		};
+		69A64D0B3089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch;
+				PRODUCT_NAME = "GPC Switch";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Debug;
+		};
+		69A64D0C3089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GPC Switch";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Mike Tigas";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miketigas.GPCSwitch;
+				PRODUCT_NAME = "GPC Switch";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A64CB1308948090086E815 /* Build configuration list for PBXProject "GPC Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A64CFD3089480A0086E815 /* Debug configuration for PBXProject "GPC Switch" */,
+				69A64CFE3089480A0086E815 /* Release configuration for PBXProject "GPC Switch" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		69A64CFF3089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A64D003089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch Extension (iOS)" */,
+				69A64D013089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch Extension (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		69A64D033089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A64D043089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch (iOS)" */,
+				69A64D053089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		69A64D063089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A64D073089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch Extension (macOS)" */,
+				69A64D083089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch Extension (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		69A64D0A3089480A0086E815 /* Build configuration list for PBXNativeTarget "GPC Switch (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A64D0B3089480A0086E815 /* Debug configuration for PBXNativeTarget "GPC Switch (macOS)" */,
+				69A64D0C3089480A0086E815 /* Release configuration for PBXNativeTarget "GPC Switch (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A64CAE308948090086E815 /* Project object */;
+	validationLevel = 1;
+}
