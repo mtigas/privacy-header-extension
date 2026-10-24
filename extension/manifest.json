@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GPC Switch",
-  "version": "2026.0.1",
+  "version": "2026.0.2",
   "description": "Sends the Global Privacy Control (Sec-GPC: 1) and Do Not Track (DNT: 1) privacy signals to websites you visit.",
   "icons": {
     "48": "icons/icon-48.png",

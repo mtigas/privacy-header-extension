@@ -9,6 +9,20 @@ struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
+        ScrollViewReader { proxy in
+            form
+#if DEBUG
+                .task {
+                    // Screenshot mode: give the list a moment to lay out first.
+                    guard let target = ScreenshotMode.scrollTarget else { return }
+                    try? await Task.sleep(for: .milliseconds(500))
+                    proxy.scrollTo(target, anchor: .top)
+                }
+#endif
+        }
+    }
+
+    private var form: some View {
         Form {
             Section {
                 VStack(spacing: 12) {
@@ -66,6 +80,7 @@ struct ContentView: View {
             Section {
                 Link("What is Global Privacy Control?",
                      destination: URL(string: "https://globalprivacycontrol.org/")!)
+                    .id("links")
                 Link("List of GPC-related enforcement actions",
                      destination: URL(string: "https://en.wikipedia.org/wiki/Global_Privacy_Control#Enforcement_actions")!)
                 Link("Global Privacy Control Tester",
@@ -91,6 +106,8 @@ struct ContentView: View {
                                         .foregroundStyle(.secondary)
                                 }
                             }
+                            // macOS forms center a row's content when it doesn't fill the row.
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     } label: {
                         Text("Disabled Sites (\(exceptions.sites.count))")

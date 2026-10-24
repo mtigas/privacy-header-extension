@@ -19,11 +19,15 @@ struct TipJarView: View {
         case loading
         case available([Product])
         case unavailable
+#if DEBUG
+        /// Screenshot mode: the product as App Store Connect and GPC Switch.storekit define it.
+        case screenshot
+#endif
     }
 
     @State private var availability = Availability.loading
     @State private var purchaseMessage: String?
-    @State private var lastTip = LastTip.load()
+    @State private var lastTip = Self.initialLastTip
 
     var body: some View {
         Section {
@@ -45,10 +49,14 @@ struct TipJarView: View {
                 case .unavailable:
                     Text("Tips aren't available right now.")
                         .foregroundStyle(.secondary)
+#if DEBUG
+                case .screenshot:
+                    TipRow(name: "Small Tip", detail: "A one-time thank-you.", price: "$0.99") {}
+#endif
                 }
             }
             .onReceive(NotificationCenter.default.publisher(for: LastTip.didChange)) { _ in
-                lastTip = LastTip.load()
+                lastTip = Self.initialLastTip
                 purchaseMessage = nil
             }
             .onInAppPurchaseCompletion { product, result in
@@ -70,9 +78,26 @@ struct TipJarView: View {
         }
     }
 
+    /// The last tip to show in the footer; none in screenshot mode, so a tip made while
+    /// testing on the same device doesn't appear in the App Store images.
+    private static var initialLastTip: LastTip? {
+#if DEBUG
+        if ScreenshotMode.isOn {
+            return nil
+        }
+#endif
+        return LastTip.load()
+    }
+
     // MARK: - StoreKit
 
     private func loadProducts() async {
+#if DEBUG
+        if ScreenshotMode.isOn {
+            availability = .screenshot
+            return
+        }
+#endif
         do {
             let products = try await Product.products(for: Self.productIDs)
             let ordered = products.sorted { lhs, rhs in
@@ -172,28 +197,42 @@ struct TipRowStyle: ProductViewStyle {
             ProgressView()
                 .frame(maxWidth: .infinity)
         case .success(let product):
-            HStack(spacing: 12) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(product.displayName)
-                        .font(.headline)
-                    Text(product.description)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
-                Spacer(minLength: 8)
-                Button(product.displayPrice) {
-                    configuration.purchase()
-                }
-                .buttonStyle(.borderedProminent)
-                .accessibilityLabel("Tip \(product.displayPrice)")
+            TipRow(name: product.displayName, detail: product.description, price: product.displayPrice) {
+                configuration.purchase()
             }
-            .padding(.vertical, 4)
         case .failure, .unavailable:
             Text("Tips aren't available right now.")
                 .foregroundStyle(.secondary)
         @unknown default:
             EmptyView()
         }
+    }
+
+}
+
+/// One tip: name and description on the left, the price as the buy button on the right.
+struct TipRow: View {
+
+    let name: String
+    let detail: String
+    let price: String
+    let buy: () -> Void
+
+    var body: some View {
+        HStack(spacing: 12) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(name)
+                    .font(.headline)
+                Text(detail)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 8)
+            Button(price, action: buy)
+                .buttonStyle(.borderedProminent)
+                .accessibilityLabel("Tip \(price)")
+        }
+        .padding(.vertical, 4)
     }
 
 }

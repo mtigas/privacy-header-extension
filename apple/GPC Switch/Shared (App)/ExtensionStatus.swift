@@ -42,6 +42,12 @@ import SafariServices
 
     /// Asks Safari whether the extension is enabled.
     func refresh() async {
+#if DEBUG
+        if ScreenshotMode.isOn {
+            apply(.enabled(true))
+            return
+        }
+#endif
 #if os(macOS)
         startDeadline()
         apply(await Self.probe())
