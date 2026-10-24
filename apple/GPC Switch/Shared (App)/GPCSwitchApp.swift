@@ -42,3 +42,25 @@ struct GPCSwitchApp: App {
     }
 
 }
+
+#if DEBUG
+/// Launch arguments for taking App Store screenshots, read from the arguments domain of
+/// `UserDefaults` (`-GPCSwitchScreenshots YES`). Debug builds only.
+///
+/// A simulator launched from the command line has no StoreKit configuration and an
+/// unreliable Safari extension switch, so this mode shows what a user with the extension
+/// on would see: the status reads Enabled and the tip row shows the real product's name
+/// and price without asking StoreKit.
+enum ScreenshotMode {
+    static var isOn: Bool {
+        UserDefaults.standard.bool(forKey: "GPCSwitchScreenshots")
+    }
+
+    /// `-GPCSwitchScrollTo links` scrolls the links section to the top, which brings the
+    /// tip jar into view. (Scrolling any further runs into the end of the list, which
+    /// leaves rows under the status bar.)
+    static var scrollTarget: String? {
+        isOn ? UserDefaults.standard.string(forKey: "GPCSwitchScrollTo") : nil
+    }
+}
+#endif

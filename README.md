@@ -38,9 +38,9 @@ badges the toolbar icon:
 
 Turning the extension off in Safari is the on/off switch. There are no settings.
 
-The extension makes no network requests of its own and collects nothing; see
-[`PRIVACY.md`](PRIVACY.md). Safari itself has no GPC setting as of October 2026 (California's
-AB 566 requires browsers to offer an opt-out preference signal setting from 1 January 2027), which is the gap this fills.
+The extension makes no network requests of its own and collects no data; see [`PRIVACY.md`](PRIVACY.md).
+
+California's AB 566 requires browsers to offer an opt-out preference signal, effective January 1, 2027. Safari does not yet have a GPC setting as of October 2026. This extension fills that gap, and will continue to do so for Safari versions prior to the built-in becoming available.
 
 ## License
 
