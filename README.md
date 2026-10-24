@@ -4,11 +4,14 @@ A minimal Safari web extension for macOS and iOS that sends the
 [Global Privacy Control](https://globalprivacycontrol.org/) and
 [Do Not Track](https://www.w3.org/TR/tracking-dnt/) signals, and does nothing else.
 
+On the App Store as [GPC Privacy Switch](https://apps.apple.com/app/gpc-privacy-switch/id6826449971), for iPhone, iPad and Mac.
+
+<a href="https://apps.apple.com/app/gpc-privacy-switch/id6826449971">
+<img src="design/app-store-badge/download-on-the-app-store-black.svg" alt="Download on the App Store" height="48">
+</a>
+
 | | |
 |---|---|
-| Extension and app name | GPC Switch |
-| App Store name | GPC Privacy Switch (subtitle: "GPC + Do-Not-Track for Safari") |
-| Bundle IDs | `com.miketigas.GPCSwitch` (app), `com.miketigas.GPCSwitch.Extension` (extension), on iOS and macOS |
 | Requires | iOS 18 / macOS 15 or later; one universal App Store record for both |
 | Privacy | Collects nothing, sends nothing: [`PRIVACY.md`](PRIVACY.md) |
 | License | MPL-2.0 |

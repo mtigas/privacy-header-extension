@@ -4,6 +4,16 @@ GPC Switch: additional licenses and notices
 GPC Switch itself is licensed under the Mozilla Public License, Version 2.0;
 see LICENSE.
 
+App Store badge
+---------------
+
+design/app-store-badge/ holds Apple's "Download on the App Store" badge,
+unmodified, as published by Apple's marketing tools
+(https://toolbox.marketingtools.apple.com). It is used to link to the app's
+App Store page as Apple's App Store marketing guidelines allow, and is not
+covered by this repository's license. Apple, the Apple logo and App Store
+are trademarks of Apple Inc.
+
 Site-exception list
 -------------------
 
