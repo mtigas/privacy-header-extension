@@ -14,6 +14,7 @@ On the App Store as [GPC Privacy Switch](https://apps.apple.com/app/gpc-privacy-
 |---|---|
 | Requires | iOS 18 / macOS 15 or later; one universal App Store record for both |
 | Privacy | Collects nothing, sends nothing: [`PRIVACY.md`](PRIVACY.md) |
+| Support | Setup help, FAQ and contact: [`SUPPORT.md`](SUPPORT.md) |
 | License | MPL-2.0 |
 
 - Page, subresource, iframe, fetch/XHR and redirect requests from sites the extension is
